@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-html  {
+html {
     max-width: 100%;
     /*overflow-x: hidden;*/
     height: 100vh;
     /*min-width: 20em; /* es 320px en em*/
-    font-size: 0.8em;/* 12 px en em*/
+    font-size: 0.8em;
+    /* 12 px en em*/
     font-family: 'Times New Roman';
 }
 
@@ -25,8 +26,8 @@ body {
         "footer";
 
     background: #EAA4BC;
-    
-    
+
+
 
 }
 
@@ -40,28 +41,29 @@ header {
     grid-area: header;
     /*place-content:center ;*/
     display: flex;
-    
-     align-items: center;
- /*   grid-template-areas:
+
+    align-items: center;
+    grid-template-areas:
         "logo logo titulo titulo";
-        grid-template-columns:repeat(2,1fr);*/
-    
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 
 
 .logo img {
-    
+
     width: 40vw;
-    border-radius: 4em;  /* 40px en em*/
-   /* margin-left: 30px;*/
+    border-radius: 4em;
+    /* 40px en em*/
+    /* margin-left: 30px;*/
 
 }
 
 .titulo {
-    
+
     font-size: 7vw;
-   /* align-items: center;
+    /* align-items: center;
     text-align: center;*/
     color: #79CDCF;
     /* animation-duration: 5s;
@@ -83,16 +85,17 @@ header {
    }*/
 /*------------ menu en el nav-------------------*/
 nav {
-    
+
     grid-area: nav;
     display: grid;
     max-width: 100%;
     /*resposive*/
 
-   /* margin-left: auto;
+    /* margin-left: auto;
     margin-bottom: 1.875em; /* 30px en em*/
     justify-items: center;
-    border-radius: 1.25em;/*20 px en em*/
+    border-radius: 1.25em;
+    /*20 px en em*/
     background-color: #FFFFFF;
 
 }
@@ -102,9 +105,9 @@ nav {
     max-width: 100%;
     list-style: none;
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
-    
+
 }
 
 .menu>li {
@@ -114,7 +117,8 @@ nav {
 
 .menu>li>a {
     display: block;
-    padding: 0.938em 1.25em; /* 15px y 20px en em*/
+    padding: 0.938em 1.25em;
+    /* 15px y 20px en em*/
     color: #A37283;
     font-family: 'Open sans';
     font-size: 1.2em;
@@ -141,12 +145,13 @@ nav {
 
 .submenu li a {
     display: block;
-    padding: 0.938em; /* 15px en em*/
+    padding: 0.938em;
+    /* 15px en em*/
     color: #FFFFFF;
     font-family: 'times new roman';
     font-size: 1.5em;
     text-decoration: none;
-    
+
 }
 
 .menu li:hover .submenu {
@@ -163,12 +168,14 @@ nav {
 
 .sectionA {
     grid-area: sectionA;
-   /* margin-left: 20%;*/
+    /* margin-left: 20%;*/
     position: relative;
-    max-width: 18.75em; /* 300px en em*/
-    border-radius: 0.375em;  /* 6px en em*/
+    max-width: 18.75em;
+    /* 300px en em*/
+    border-radius: 0.375em;
+    /* 6px en em*/
     overflow: hidden;
-  
+
     margin: auto;
 
 }
@@ -184,6 +191,7 @@ nav {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
+
 .slide .item-slide img {
     max-width: 100%;
     max-height: 100%;
@@ -200,7 +208,8 @@ nav {
 
 .pagination {
     position: absolute;
-    bottom: 1.25em;  /* 20px en em*/
+    bottom: 1.25em;
+    /* 20px en em*/
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -213,14 +222,18 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.125em solid white;  /* 2pxen em*/
-    width: 1.875em;  /* 30 px en em*/
+    border: 0.125em solid white;
+    /* 2pxen em*/
+    width: 1.875em;
+    /* 30 px en em*/
     height: 1.875em;
-    border-radius: 0.25em; /* 4px en em*/
+    border-radius: 0.25em;
+    /* 4px en em*/
     overflow: hidden;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.5);
-    margin: 0 0.625em;  /* 10 px en em*/
+    margin: 0 0.625em;
+    /* 10 px en em*/
     text-align: center;
     transition: all 300ms;
 }
@@ -296,52 +309,56 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 
 /*------------footer-------------*/
 .footer {
-    display:flex;
+    display: flex;
     grid-area: footer;
     flex-direction: row;
-     max-width: 100%;
-   
+    max-width: 100%;
+
     background-color: #FFB3CD;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-    
-.piedepagina{
-        display: flex;
-    
+
+.piedepagina {
+    display: flex;
+
 
 }
-.piedepagina >div >ul{
+
+.piedepagina>div>ul {
     list-style: none;
 }
 
-.textofooter p{
+.textofooter p {
     font-size: 1.2em;
-}
-.piedepagina > div > ul > li >a{
-    display: flex;
-    font-size: 1.2em;
-    padding: 0.313em;  /* 5px en em*/
-    margin: 0.625em;   /* 10pxen em*/
-    color: white;
-    text-decoration: none 
-       
 }
 
-.textofooter{
+.piedepagina>div>ul>li>a {
+    display: flex;
+    font-size: 1.2em;
+    padding: 0.313em;
+    /* 5px en em*/
+    margin: 0.625em;
+    /* 10pxen em*/
+    color: white;
+    text-decoration: none
+}
+
+.textofooter {
     display: flex;
     align-items: flex-end;
 }
+
 .piedepagina li a:hover {
     color: #FFB3CD;
     transition: all 2s;
 }
-    
 
 
-.textofooter{
+
+.textofooter {
     display: flex;
     color: white;
     float: right;
@@ -364,8 +381,9 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 .main-productoselectricos {
-    
+
 
     grid-template-areas:
         "h1-Productos "
@@ -373,12 +391,11 @@ h2 {
         "sectionC "
         "h2-Productos "
         "sectionD ";
-     
-   /* grid-template-columns: repeat(2, 2fr);*/
-    
-    justify-items: center;
-    margin: auto 
 
+    /* grid-template-columns: repeat(2, 2fr);*/
+
+    justify-items: center;
+    margin: auto
 }
 
 .h1-Productoselectricos {
@@ -386,9 +403,11 @@ h2 {
     display: flex;
     justify-content: center;
 }
-.maquillajesrealizados .h2-maquillajes{
+
+.maquillajesrealizados .h2-maquillajes {
     grid-area: h2-maquillajes;
 }
+
 .sectionC {
 
     grid-area: sectionC;
@@ -400,7 +419,7 @@ h2 {
 
 .sectionD {
     grid-area: sectionD;
-     width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,18 +429,20 @@ h2 {
     text-align: center;
 }
 
-   
+
 
 .h2-skincare>h2 {
     text-align: center;
-    padding: 1.25em;    /* 20px en em*/
+    padding: 1.25em;
+    /* 20px en em*/
     font-size: 2em;
 }
 
 .img-skincare {
     display: flex;
     justify-content: center;
-    padding: 0.625em;   /* 10px en em*/
+    padding: 0.625em;
+    /* 10px en em*/
     height: 60vh;
     width: 70%;
 
@@ -429,14 +450,14 @@ h2 {
 
 /*--contenedor que contiene al p*/
 .p-div-macro {
-    
+
     background-color: #fff;
     border-radius: 5vw;
     text-align: justify;
     padding: 10vw;
     min-height: 60vh;
-    
-    
+
+
     /* ­webkit­shape­inside: rectangle(0,0,100%,100%,50px,50px);*/
     /* shape-outside: rectangle(0,0,100%,100%,5vw,5vw);*/
 }
@@ -451,47 +472,55 @@ h2 {
 /*.............página de alimentación saludable--------*/
 
 
-.main_maquillajesrealizados{
+.main_maquillajesrealizados {
     max-width: 100%;
-    grid-template-areas: 
-    "h1-macro"
-    "sectionE "
-    "sectionF "
-    "sectionG ";
-    
-    
+    grid-template-areas:
+        "h1-macro"
+        "sectionE "
+        "sectionF "
+        "sectionG ";
+
+
 }
 
 
 
-.sectionE{
+.sectionE {
     grid-area: sectionE;
     display: grid;
     justify-items: center;
 }
-.sectionF{
+
+.sectionF {
     grid-area: sectionF;
     display: grid;
     justify-items: center;
 }
-.sectionG{
+
+.sectionG {
     grid-area: sectionG;
     display: grid;
     justify-items: center;
 }
-.img-banner{
+
+.img-banner {
     display: flex;
     justify-content: center;
-    padding: 1.875em; /*30pxen em*/
-    width: 20em;   /* 320px en em*/
-    height:12.5em;    /*200px en em*/
+    padding: 1.875em;
+    /*30pxen em*/
+    width: 20em;
+    /* 320px en em*/
+    height: 12.5em;
+    /*200px en em*/
     margin: auto;
 }
-.img-envios img{
+
+.img-envios img {
     width: 90%;
     height: 100%;
 }
-.p-div-producto1{
+
+.p-div-producto1 {
     display: grid;
     width: 70%;
     background-color: #fff;
@@ -500,28 +529,33 @@ h2 {
     padding: 2vw;
     min-height: 50vh;
     word-wrap: break-word;
-    margin: 0.625em;   /*10px en em*/
-    font-size:1.2rem;
-    
-}
-.p-div-producto2 >p{
-    padding: 0.625em; /* 10 px en em*/
-    
+    margin: 0.625em;
+    /*10px en em*/
+    font-size: 1.2rem;
+
 }
 
-.img-producto3{
+.p-div-producto2>p {
+    padding: 0.625em;
+    /* 10 px en em*/
+
+}
+
+.img-producto3 {
     display: flex;
     justify-content: center;
-    padding: 1.875em; /* 30 px en em*/
-    
+    padding: 1.875em;
+    /* 30 px en em*/
+
 }
-.img-producto4 img{
+
+.img-producto4 img {
     max-width: 80%;
 }
 
 /*--------- Maquillajes Realizados 1------------------- */
 
-.img-maquillajesrealizados{
+.img-maquillajesrealizados {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -530,35 +564,36 @@ h2 {
     margin: auto;
 }
 
-.h1-maquillajesrealizados{
+.h1-maquillajesrealizados {
     color: #fff;
     text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #FFB3CD,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px #487A7A,
-               0 0 5px #487A7A,
-               0 1px 3px #487A7A,
-               0 3px 5px #487A7A,
-               0 5px 10px #487A7A,
-               0 10px 10px #487A7A,
-               0 20px 20px #487A7A;
+        0 2px 0 #FFB3CD,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px #487A7A,
+        0 0 5px #487A7A,
+        0 1px 3px #487A7A,
+        0 3px 5px #487A7A,
+        0 5px 10px #487A7A,
+        0 10px 10px #487A7A,
+        0 20px 20px #487A7A;
     text-align: center;
     padding: 20px;
     font-size: 2rem;
-   font-family:  "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 
 }
 
-.sectionH p{
+.sectionH p {
     display: flex;
     padding: 30px;
     width: auto;
     height: auto;
-  
+
 }
-.sectionH h3{
+
+.sectionH h3 {
     color: #fff;
     text-shadow: #FFB3CD 0 0 10px;
     text-align: left;
@@ -566,12 +601,12 @@ h2 {
     font-size: 2rem;
 }
 
-.sectionH ul{
+.sectionH ul {
     list-style: square inside url("sqpurple.gif");
     margin-left: 10px;
 }
 
-.sectionI h3{
+.sectionI h3 {
     color: #fff;
     text-shadow: #FFB3CD 0 0 10px;
     text-align: left;
@@ -579,64 +614,69 @@ h2 {
     font-size: 2rem;
 }
 
-.sectionI ul{
+.sectionI ul {
     list-style: square inside url("sqpurple.gif");
     margin-left: 10px;
 }
 
 
 /* ----------------------------------*/
-@media (min-width: 768px) and (max-width:1024px) /*, (max-width:1440)and (min-width:1025px)*/
-{
-    .logo img{
-    width: 20vw;
-}
+@media (min-width: 768px) and (max-width:1024px)
 
-     nav{
+/*, (max-width:1440)and (min-width:1025px)*/
+    {
+    .logo img {
+        width: 20vw;
+    }
+
+    nav {
         width: 90%;
         margin: auto;
-     }
-   
+    }
+
 }
 
-@media (min-width:1024px){
-     .logo img {
+@media (min-width:1024px) {
+    .logo img {
         width: 15vw;
-     }
+    }
 
-     nav{
+    nav {
         width: 70%;
         margin: auto;
-     }
+    }
 
-     .titulo {
+    .titulo {
         font-size: 4vw;
-     }
-   
+    }
+
 
     /* productos electricos*/
     .img-macro {
         width: 40%;
-    
-         }
-     .img-cepillofacial img {
 
-       width: 100%;
+    }
+
+    .img-cepillofacial img {
+
+        width: 100%;
     }
 
 }
 
-@media  (min-width:2560) {
-    html{
+@media (min-width:2560) {
+    html {
         font-size: 18 em;
     }
-    nav{
+
+    nav {
         width: 60%;
     }
+
     .logo img {
         width: 20vw;
-       }
-    
+    }
+
     .titulo {
         font-size: 4vw;
     }
